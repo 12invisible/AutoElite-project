@@ -1,0 +1,124 @@
+:root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --background-color: #ffffff;
+            --text-color: #212529;
+            --card-bg: #f8f9fa;
+            --border-color: #dee2e6;
+        }
+
+        .dark-mode {
+            --primary-color: #0dcaf0;
+            --secondary-color: #6c757d;
+            --background-color: #747272;
+            --text-color: #0f0f0fab;
+            --card-bg: #fbd5d5;
+            --border-color: #343a40;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                       url('https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+
+        .car-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .notification-banner {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+
+        .filter-section {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .car-image {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .badge-premium {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #000;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+        }
+
+        .mode-toggle {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .mode-toggle:hover {
+            transform: rotate(180deg);
+        }
+
+        .dashboard-card {
+            background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chatbot-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .car-card {
+                margin-bottom: 20px;
+            }
+            
+            .filter-section {
+                margin-bottom: 20px;
+            }
+        }
